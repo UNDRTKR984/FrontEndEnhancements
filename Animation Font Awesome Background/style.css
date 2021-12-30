@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+section{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background: #111;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+section .row {
+    position: relative;
+    width: 100%;
+    display: flex;
+    white-space: nowrap;
+    font-size: 1.15em;
+}
+
+i{
+    color:rgba(0, 0, 0, 0.5);
+    transition: 500ms;
+    padding: 25px 25px;
+    animation: flash;
+    animation-timing-function: ease;
+    animation-play-state: running;
+    animation-iteration-count: infinite;
+    user-select: none;
+}
+
+i:hover{
+    color: #0f0;
+    text-shadow: 0 0 40px #0f0
+}
+
+@keyframes flash {
+    0% {
+        color:rgba(0, 0, 0, 0.5);
+    }
+    50% {
+        color: #0f0;
+        text-shadow: 0 0 10px #0f0;
+    }
+    100%{
+        color:rgba(0, 0, 0, 0.5);
+    }
+}
