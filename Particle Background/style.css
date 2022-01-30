@@ -1,0 +1,29 @@
+body {
+    overflow: hidden;
+    height: 100vh;
+    width: 100vw;
+    background: radial-gradient(rgb(146, 146, 146), rgb(85, 85, 85));
+}
+
+div {
+    animation: appear;
+    animation-timing-function: ease;
+    animation-play-state: running;
+    animation-direction: normal;
+    user-select: none;
+    border-radius: 50%;
+    background: white;
+    opacity: 0;
+}
+
+@keyframes appear {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0.8;
+    }
+    100%{
+        opacity: 0;
+    }
+}
