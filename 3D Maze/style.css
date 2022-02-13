@@ -1,0 +1,20 @@
+#gameScreen {
+    position: relative;
+    width: 95%;
+    height: 95%;
+}
+
+canvas {
+    /* all four are needed to support the most browsers */
+    image-rendering: -moz-crisp-edges;
+    image-rendering: -webkit-crisp-edges;
+    image-rendering: pixelated;
+    image-rendering: crisp-edges;
+  }
+  
+
+.gameScreen {
+    width: 50vw;
+    height: 50vh;
+    margin: auto;
+}
